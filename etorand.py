@@ -23,7 +23,7 @@ MSG_URL='/sendMessage?chat_id='
 #  $ pip install beautifulsoup4.  
 #  $ pip install bs4  
 
-os.chdir('/home/opc/SCRIPT/')
+os.chdir('./')
 filename = './LOG/{0}_{1}.log'.format(os.path.splitext(os.path.basename(sys.argv[0]))[0],datetime.now().strftime('%Y%m%d'))
 logging.basicConfig(filename=filename, level=logging.INFO,format='[%(funcName)s:%(lineno)05d] %(asctime)s %(message)s',datefmt='[%Y.%m.%d %I:%M:%S]')
 logging.info('Started')

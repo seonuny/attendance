@@ -22,7 +22,7 @@ CHAT_ID='454993046'
 MSG_URL='/sendMessage?chat_id='
 
 # logging 
-filename = '/home/hugh/SCRIPT/LOG/{0}_{1}.log'.format(os.path.basename(os.path.splitext(sys.argv[0])[0]),datetime.now().strftime('%Y%m%d'))
+filename = './LOG/{0}_{1}.log'.format(os.path.basename(os.path.splitext(sys.argv[0])[0]),datetime.now().strftime('%Y%m%d'))
 logging.basicConfig(filename=filename, level=logging.INFO,format='%(asctime)s %(message)s',datefmt='[%Y.%m.%d %I:%M:%S]')
 logging.info('Started')
 
